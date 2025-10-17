@@ -1,59 +1,16 @@
-// src/components/GoogleReviews.jsx
+// src/components/GoogleReviews.jsx (CLEANED)
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { FaStar } from 'react-icons/fa'; // Icon for visual consistency
+import { FaStar } from 'react-icons/fa'; 
 
 function GoogleReviews() {
   
-  // 💡 Your Trustindex Widget ID and Place ID
   const WIDGET_ID = '682571e5626435625c26fedc09b';
   const PLACE_ID = 'ChIJM1gT8a4VrjsR2LpMih4WtPc';
-  
-  // Script URL for dynamic loading
-  const SCRIPT_SRC = `https://cdn.trustindex.io/loader.js?${WIDGET_ID}`; 
-  const SCRIPT_ID = 'trustindex-loader-script';
 
-  useEffect(() => {
-    
-    // यह फ़ंक्शन Trustindex को मैन्युअल रूप से लोड करने की कोशिश करता है
-    const loadTrustindexScript = () => {
-        // अगर स्क्रिप्ट पहले से मौजूद है, तो उसे re-initialize करने की कोशिश करें
-        if (window.Trustindex) {
-            if (typeof window.Trustindex.init === 'function') {
-                window.Trustindex.init();
-                return;
-            }
-        }
-
-        // अगर स्क्रिप्ट मौजूद नहीं है, तो उसे डायनामिक रूप से लोड करें
-        if (!document.getElementById(SCRIPT_ID)) {
-            const script = document.createElement('script');
-            script.src = SCRIPT_SRC;
-            script.id = SCRIPT_ID;
-            script.async = true;
-            document.body.appendChild(script);
-
-            // एक बार स्क्रिप्ट लोड हो जाने के बाद, उसे init करें
-            script.onload = () => {
-                if (window.Trustindex && typeof window.Trustindex.init === 'function') {
-                    window.Trustindex.init();
-                }
-            };
-        }
-    };
-
-    // Component mount होने पर स्क्रिप्ट लोड करें
-    loadTrustindexScript();
-
-    // Cleanup: Remove script when component unmounts (optional, but good practice)
-    return () => {
-        const scriptElement = document.getElementById(SCRIPT_ID);
-        if (scriptElement && scriptElement.parentNode) {
-            scriptElement.parentNode.removeChild(scriptElement);
-        }
-    };
-  }, [WIDGET_ID]); // Reruns if the widget ID changes
+  // Note: All script loading logic (useEffect) has been removed. 
+  // Trustindex script must be in public/index.html
 
   return (
     <motion.section 
@@ -70,27 +27,28 @@ function GoogleReviews() {
         
         <div className="flex justify-center flex-wrap">
            
-           {/* 🛑 TRUSTINDEX WIDGET PLACEHOLDER */}
-           {/* Trustindex का टारगेट DIV */}
+           {/* TRUSTINDEX WIDGET PLACEHOLDER */}
            <div 
              className="w-full max-w-4xl flex justify-center" 
            >
+               {/* 🛑 TRUSTINDEX TARGET DIV 🛑 */}
+               {/* यह DIV ही वह जगह है जहाँ स्क्रिप्ट रिव्यूज़ डालेगी। */}
                <div 
                    data-trustindex-widget-id={WIDGET_ID} 
                    className="w-full text-center" 
                >
-                   {/* यह टेक्स्ट तब तक दिखेगा जब तक विजेट लोड न हो जाए */}
+                   {/* Fallback/Loading message (यह तभी दिखेगा जब स्क्रिप्ट लोड न हो पाए) */}
                    <div className="p-8 text-gray-500">
                      <FaStar className="inline text-4xl text-yellow-500 mb-2" aria-hidden="true" />
                      <p>Loading authentic Google reviews...</p>
-                     <p className="text-sm mt-2">Please ensure your Netlify environment is properly linked to Trustindex.</p>
+                     <p className="text-sm mt-2 font-semibold">If you see this live, the script failed. Please refresh.</p>
                    </div>
                </div>
            </div>
 
         </div>
         
-        {/* Direct Link to Google Maps Reviews (Always works) */}
+        {/* Direct Link to Google Maps Reviews */}
         <p className="text-center mt-8 text-lg text-gray-700">
             <a 
                 href={`https://search.google.com/local/reviews?placeid=${PLACE_ID}`} 
