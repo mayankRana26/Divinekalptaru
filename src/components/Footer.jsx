@@ -60,7 +60,7 @@ function Footer() {
             <div className="space-y-3 text-black">
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-green-500" />
-                <a href="mailto:info@divinekalptaru.com" className="hover:text-green-500">info@divinekalptaru.com</a>
+                <a href="mailto:divinekalptaru@gmail.com" className="hover:text-green-500">Divinekalptaru@gmail.com</a>
               </div>
               <div className="flex items-center space-x-3">
                 <FaPhoneAlt className="text-green-500" />
@@ -68,7 +68,7 @@ function Footer() {
               </div>
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-green-500 flex-shrink-0 mt-1" />
-                <span>Near Laxman Jhula, Rishikesh, Uttarakhand, India</span>
+                <span>26 2nd cross Akshaya garden Akshay Nagar, post, Begur, Bengaluru, Karnataka 560114, India</span>
               </div>
             </div>
           </div>
