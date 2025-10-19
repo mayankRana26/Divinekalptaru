@@ -10,6 +10,8 @@ import Services from './pages/Services';
 // 🟢 FIX: ServiceDetail को अब एक अलग फ़ाइल से import करेंगे
 import ServiceDetail from './pages/ServiceDetail'; 
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 function App() {
@@ -28,7 +30,8 @@ function App() {
           <Route path="/services/:id" element={<ServiceDetail />} />
         </Routes>
       </main>
-
+      <ScrollToTop />
+     
       <Footer />
     </div>
   );

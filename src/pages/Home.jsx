@@ -4,6 +4,8 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import VideoCarousel from '../components/VideoCarousel';
 import FacilitiesSection from '../components/FacilitiesSection';
 import PricingPlanSection from '../components/PricingPlanSection';
+import HelpPopup from '../components/HelpPopup';
+import InstructorSection from '../components/InstructorSection';
 // import GoogleReviews from '../components/GoogleReviews';
 
 
@@ -14,7 +16,9 @@ function Home() {
       <WhyChooseUs />
       <VideoCarousel />
       <PricingPlanSection />
+      <InstructorSection />
       <FacilitiesSection />
+       <HelpPopup />
       {/* <GoogleReviews /> */}
       
     </>

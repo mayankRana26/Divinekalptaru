@@ -33,7 +33,7 @@ const imageVariants = {
 function FacilitiesSection() {
   return (
     <motion.section
-      className="bg-white py-20 px-8"
+      className="bg-green-100 py-20 px-8"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
@@ -55,9 +55,9 @@ function FacilitiesSection() {
             variants={imageVariants}
           >
             <img 
-              src="/6.jpg" 
+              src="/11.jpg" 
               alt="Serene yoga center facilities in Bengaluru"
-              className='w-full h-full object-cover rounded-xl shadow-2xl border-4 border-green-500'
+              className='w-full h-full  object-cover rounded-xl shadow-2xl border-2 border-green-500'
             />
           </motion.div>
           
@@ -65,17 +65,18 @@ function FacilitiesSection() {
           <motion.div className="md:w-1/2 space-y-6" variants={sectionVariants}>
             
             <p className="text-lg leading-relaxed text-gray-700">
-              You will have access to all the facilities you could possibly need in our peaceful campus in **Bengaluru**. Here, you will achieve the ideal balance between your body and mind within serene and immaculate surroundings. The ambiance is meticulously designed for immersive practice of various yoga styles and postures, making it a genuinely inspiring place that fosters deep spiritual well-being.
-            </p>
-            
-            <h3 className="text-2xl font-semibold mt-6 text-green-600 flex items-center">
-              <FaUtensils className="mr-3" /> Dining and Wellness Highlights
-            </h3>
-            
-            <p className="text-lg leading-relaxed text-gray-700">
-              The center provides three wholesome **Sattvic meals** every day in our dedicated dining hall. We expertly cater to various dietary needs including vegetarian, vegan, gluten-free, and organic restrictions, serving healthful and delectable food. Additionally, we provide restorative services like **Kirtan** (sound healing) and **Ayurvedic massage** to support positive energy and holistic well-being during your time here.
-            </p>
+🕉️ Welcome to Your Sanctuary of Inner Harmony
 
+You will have access to all the facilities you could possibly need in our peaceful campus in Bengaluru. Here, you will achieve the ideal balance between your body and mind within serene and immaculate surroundings. The ambiance is meticulously designed for immersive practice of various yoga styles and postures, making it a genuinely inspiring place that fosters deep spiritual well-being. 🌿
+
+Under the gentle guidance of our experienced yoga masters, you’ll explore the true essence of yoga — blending ancient traditions with modern insights. From sunrise meditations that awaken your spirit to evening satsangs that calm your soul, every session is designed to elevate your awareness and bring lasting inner peace.
+
+Whether you are a beginner discovering the beauty of yoga or an advanced practitioner refining your mastery, our personalized programs nurture growth at every step. The serene surroundings, fresh mountain breeze, and holistic routines cultivate an environment of complete rejuvenation — mind, body, and soul.
+
+Indulge in wholesome sattvic meals, connect with nature in its purest form, and embrace a slower rhythm of life that invites mindfulness and gratitude.
+
+This is more than a retreat — it’s a journey of self-discovery, a sacred space where you breathe, heal, and transform. 🧘‍♀️💫
+            </p>
           </motion.div>
         </div>
       </div>

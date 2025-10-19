@@ -80,11 +80,11 @@ function About() {
               className="text-lg leading-relaxed mb-6 text-gray-700"
               variants={sectionVariants}
             >
-              Our goal at **Divine Kalptaru** is to impart the ancient art and
-              science of **"Yoga"** in a way that would enable our pupils to
+              Our goal at Divine Kalptaru is to impart the ancient art and
+              science of "Yoga" in a way that would enable our pupils to
               actively contribute to the advancement of humanity. Our methods
-              draw strength from the immovable **Himalayan Mountains** and the
-              **River Ganga** herself, both of which are unstoppable in their
+              draw strength from the immovable Himalayan Mountains and the
+              River Ganga herself, both of which are unstoppable in their
               power and timeless wisdom.
             </motion.p>
 
@@ -109,8 +109,8 @@ function About() {
               className="text-lg leading-relaxed text-gray-700"
               variants={sectionVariants}
             >
-              **Realising one's true nature, achieving inner peace, and finding
-              relief from suffering** are the three main aims of yoga. Even a
+              Realising one's true nature, achieving inner peace, and finding
+              relief from suffering are the three main aims of yoga. Even a
               basic understanding of yoga's principles can help one's yoga
               practise and promote more calm, fulfilment, and well-being in
               their lives. Although it can take years of study and reflection to
@@ -129,12 +129,12 @@ function About() {
               className="text-lg leading-relaxed text-gray-700"
               variants={sectionVariants}
             >
-              Our **comprehensive yoga teacher training programme** includes a
+              Our comprehensive yoga teacher training programme includes a
               wide range of topics to help students develop the skills needed to
               plan safe, effective, and meaningful yoga programmes. Through the
               integration of physical practise with philosophical study,
               meditation, and teaching techniques, our yoga teacher training
-              programmes provide students with a **well-rounded education** that
+              programmes provide students with a well-rounded education that
               prepares them to share the advantages of yoga with others.
             </motion.p>
           </div>

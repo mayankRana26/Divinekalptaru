@@ -1,7 +1,9 @@
-import { motion } from 'framer-motion';
-import { services } from '../data/ServiceData'; 
-import { Link } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { services } from "../data/ServiceData";
 
+// ✨ Card Animation Variants
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -11,53 +13,82 @@ const cardVariants = {
       type: "spring",
       stiffness: 100,
       damping: 10,
-    }
-  }
+    },
+  },
+};
+
+// 🧘‍♂️ Heading Background Style
+const headingBackgroundStyle = {
+  backgroundImage: "url('/top_bg2.jpg')",
+  backgroundBlendMode: "multiply",
+};
+
+// 🌿 Heading Animation Variants
+const headingVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8 },
+  },
 };
 
 function Services() {
   return (
-    // Section Background: Light green background with top padding to clear the Header
-    <section className="bg-green-100 text-black py-20 px-8 min-h-screen pt-24" id="services">
-      <div className="container mx-auto max-w-7xl">
-        <motion.h2
-          className="text-4xl font-bold text-center mb-14 text-green-700" 
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }} // Scroll animation for heading
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.8 }}
-        >
-          Our Training Programs
-        </motion.h2>
-        
+    <section
+      id="services"
+      className="bg-green-100 text-black pt-0 pb-20 min-h-screen"
+    >
+      {/* 🌸 Section Heading Banner */}
+      <motion.div
+        className="relative bg-cover bg-center mb-16 py-12 shadow-xl overflow-hidden w-full"
+        style={headingBackgroundStyle}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={headingVariants}
+      >
+        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
+
+        <div className="container mx-auto max-w-7xl relative z-10 px-8">
+          <motion.h2 className="text-5xl font-extrabold text-center tracking-wider text-white">
+            Our <span className="text-green-300">Training</span> Programs
+          </motion.h2>
+        </div>
+      </motion.div>
+
+      {/* 🪷 Service Cards Grid */}
+      <div className="container mx-auto max-w-7xl px-8">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
           initial="hidden"
-          whileInView="visible" // Scroll animation for card grid
+          whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
         >
           {services.map((service) => (
             <Link key={service.id} to={`/services/${service.id}`} className="block">
               <motion.div
-                // Card Styling: White background, fixed minimum height, green border top
-                className="bg-white rounded-xl p-8 shadow-xl flex flex-col justify-between text-center min-h-[350px] transition-shadow duration-300 border-t-4 border-green-500" 
+                className="bg-white rounded-xl p-8 shadow-xl flex flex-col justify-between text-center min-h-[350px] border-t-4 border-green-500 transition-shadow duration-300"
                 variants={cardVariants}
-                whileHover={{ y: -10, boxShadow: "0 20px 25px -5px rgba(52, 211, 163, 0.3)" }} // Lift and green shadow on hover
+                whileHover={{
+                  y: -10,
+                  boxShadow:
+                    "0 20px 25px -5px rgba(52, 211, 163, 0.3)",
+                }}
               >
-                
-                {/* 🛑 IMAGE REMOVED: Image block is no longer rendered */}
-
                 <div>
-                    <h3 className="text-3xl font-bold mb-4 text-green-700">{service.title}</h3>
-                    <p className="text-gray-600 leading-relaxed text-lg">{service.description}</p>
+                  <h3 className="text-3xl font-bold mb-4 text-green-700">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {service.description}
+                  </p>
                 </div>
 
-                {/* Call to Action Link */}
                 <span className="mt-6 inline-block text-green-800 font-semibold hover:text-green-900 transition-colors">
-                    View Details &rarr;
+                  View Details &rarr;
                 </span>
-                
               </motion.div>
             </Link>
           ))}
