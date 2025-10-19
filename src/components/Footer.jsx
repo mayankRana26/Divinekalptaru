@@ -81,10 +81,10 @@ function Footer() {
       </div>
 
       {/* Copyright Bar */}
-      <div className="bg-lime-400 border-t-2 border-green-600 py-4">
+      <div className="bg-lime-500 border-t-2 border-green-600 py-4">
         <div className="container mx-auto max-w-7xl px-8 text-center text-sm text-black">
           &copy; {year} to {year + 1} Divinekalptaru. All rights reserved.
-          <span className="ml-4 hidden sm:inline-block">| Designed & Developed by Mayank Rana.</span>
+          <span className="ml-4  sm:inline-block">| Designed & Developed by Mayank Rana.</span>
         </div>
       </div>
     </footer>
