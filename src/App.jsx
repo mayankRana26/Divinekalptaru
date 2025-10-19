@@ -11,6 +11,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail'; 
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       
       {/* main grow kare, taaki footer bottom pe rahe */}
       <main className="flex-grow pt-16">
+        <ScrollToTopOnNavigate />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
