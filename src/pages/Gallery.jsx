@@ -22,14 +22,6 @@ import glry17 from "../assets/gallery/glry17.jpg";
 import glry18 from "../assets/gallery/glry18.jpg";
 import glry19 from "../assets/gallery/glry19.jpeg";
 import glry20 from "../assets/gallery/glry20.jpg";
-import glry21 from "../assets/gallery/glry21.jpg";
-import glry22 from "../assets/gallery/glry22.jpg";
-import glry23 from "../assets/gallery/glry23.jpg";
-import glry24 from "../assets/gallery/glry24.jpg";
-import glry25 from "../assets/gallery/glry25.jpg";
-import glry26 from "../assets/gallery/glry26.jpg";
-import glry27 from "../assets/gallery/glry27.jpg";
-import glry28 from "../assets/gallery/glry28.jpg";
 import glry29 from "../assets/gallery/glry29.jpg";
 import glry30 from "../assets/gallery/glry30.jpg";
 import glry31 from "../assets/gallery/glry31.jpg";
@@ -56,14 +48,6 @@ const galleryImages = [
   { id: 18, src: glry18, alt: "Trekking near Rishikesh" },
   { id: 19, src: glry19, alt: "Shatkarma Techniques Practice" },
   { id: 20, src: glry20, alt: "Yin Yoga Deep Stretching" },
-  { id: 21, src: glry21, alt: "Morning Tea and Reflection" },
-  { id: 22, src: glry22, alt: "Yoga Teacher Guiding Students" },
-  { id: 23, src: glry23, alt: "Tapasya Fire Ceremony" },
-  { id: 24, src: glry24, alt: "Handstand (Adho Mukha Vrksasana) Practice" },
-  { id: 25, src: glry25, alt: "Kirtan Music Night" },
-  { id: 26, src: glry26, alt: "Vinyasa Flow in Open Air" },
-  { id: 27, src: glry27, alt: "Traditional Indian Meal" },
-  { id: 28, src: glry28, alt: "Quiet Reading Spot" },
   { id: 29, src: glry29, alt: "Group Picture at Ganga Ghat" },
   { id: 30, src: glry30, alt: "Headstand (Sirsasana) Instruction" },
   { id: 31, src: glry31, alt: "Peaceful Evening Meditation" },

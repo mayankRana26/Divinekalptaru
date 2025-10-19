@@ -7,6 +7,8 @@ const videos = [
   { id: 2, src: "/video1.mp4", title: "Morning Vinyasa Flow" },
   { id: 3, src: "/video2.mp4", title: "Deep Meditation Guide" },
   { id: 4, src: "/video4.mp4", title: "Restorative Evening Stretch" },
+  { id: 5, src: "/video5.mp4", title: "Full Body Stretch" },
+  
 ];
 
 function VideoCarousel() {
@@ -76,8 +78,8 @@ function VideoCarousel() {
                 <motion.div
                   key={vid.id}
                   // 🟢 FIX: Set card width to roughly 50% minus the gap (space-x-8 or 32px)
-                  style={{ width: 'calc(60% - 16px)' }} 
-                  className="flex-shrink-0 aspect-video bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 relative group sm:w-[calc(50%-16px)] md:w-[calc(33.33%-20px)] lg:w-[calc(25%-24px)]" // Added responsive steps (optional)
+                  style={{ width: 'calc(50% - 16px)' }} 
+                  className="flex-shrink-0 aspect-video bg-gray-100 border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 relative group sm:w-[calc(50%-16px)] md:w-[calc(33.33%-20px)] lg:w-[calc(25%-24px)]" 
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -89,7 +91,6 @@ function VideoCarousel() {
                     onClick={() => handleVideoClick(index)}
                     playsInline
                     className="w-full h-full object-cover cursor-pointer"
-                    controls // User control for sound/playback
                   ></video>
 
                   {/* Overlay Play Button (Only visible when paused and on hover) */}
