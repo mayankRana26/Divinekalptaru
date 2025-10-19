@@ -2,7 +2,9 @@ import React from 'react';
 import Hero from '../components/Hero';
 import WhyChooseUs from '../components/WhyChooseUs';
 import VideoCarousel from '../components/VideoCarousel';
-import GoogleReviews from '../components/GoogleReviews';
+import FacilitiesSection from '../components/FacilitiesSection';
+import PricingPlanSection from '../components/PricingPlanSection';
+// import GoogleReviews from '../components/GoogleReviews';
 
 
 function Home() {
@@ -11,7 +13,9 @@ function Home() {
       <Hero />
       <WhyChooseUs />
       <VideoCarousel />
-      <GoogleReviews />
+      <PricingPlanSection />
+      <FacilitiesSection />
+      {/* <GoogleReviews /> */}
       
     </>
   );

@@ -13,23 +13,26 @@ import Footer from './components/Footer';
 
 
 function App() {
-    return (
-        <div className="min-h-screen antialiased">
-            <Header />
-            <main className="pt-16"> 
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/gallery" element={<Gallery />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/services/:id" element={<ServiceDetail />} />
+  return (
+    <div className="flex flex-col min-h-screen antialiased">
+      <Header />
+      
+      {/* main grow kare, taaki footer bottom pe rahe */}
+      <main className="flex-grow pt-16">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:id" element={<ServiceDetail />} />
+        </Routes>
+      </main>
 
-                </Routes>
-            </main>
-            <Footer />
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 }
+
 
 export default App;
