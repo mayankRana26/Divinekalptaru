@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// ✅ Import images
+// ✅ Import Gallery Images
 import glry1 from "../assets/gallery/glry1.jpg";
-import glry2 from "../assets/gallery/glry2.jpg";
-import glry3 from "../assets/gallery/glry3.jpg";
 import glry4 from "../assets/gallery/glry4.jpg";
 import glry5 from "../assets/gallery/glry5.jpg";
 import glry6 from "../assets/gallery/glry6.jpg";
@@ -20,17 +18,31 @@ import glry15 from "../assets/gallery/glry15.jpg";
 import glry16 from "../assets/gallery/glry16.jpg";
 import glry17 from "../assets/gallery/glry17.jpg";
 import glry18 from "../assets/gallery/glry18.jpg";
-import glry19 from "../assets/gallery/glry19.jpeg";
+
 import glry20 from "../assets/gallery/glry20.jpg";
+import glry21 from "../assets/gallery/glry21.jpg";
+import glry22 from "../assets/gallery/glry22.jpg";
+import glry23 from "../assets/gallery/glry23.jpg";
+import glry24 from "../assets/gallery/glry24.jpg";
+import glry25 from "../assets/gallery/glry25.jpg";
+import glry26 from "../assets/gallery/glry26.jpg";
+import glry27 from "../assets/gallery/glry27.jpg";
+import glry28 from "../assets/gallery/glry28.jpg";
 import glry29 from "../assets/gallery/glry29.jpg";
 import glry30 from "../assets/gallery/glry30.jpg";
 import glry31 from "../assets/gallery/glry31.jpg";
+import glry32 from "../assets/gallery/glry32.jpg";
+import glry33 from "../assets/gallery/glry33.jpg";
+import glry34 from "../assets/gallery/glry34.jpg";
+import glry35 from "../assets/gallery/glry35.jpg";
+import glry36 from "../assets/gallery/glry36.jpg";
+import glry37 from "../assets/gallery/glry37.jpg";
+import glry38 from "../assets/gallery/glry38.jpg";
 
-// 🖼 Gallery Data
+// 🖼 All Gallery Images
 const galleryImages = [
   { id: 1, src: glry1, alt: "Sunrise Meditation in Himalayas" },
-  { id: 2, src: glry2, alt: "Group Asana Practice Outdoors" },
-  { id: 3, src: glry3, alt: "Yoga Philosophy Class Session" },
+  
   { id: 4, src: glry4, alt: "Chakra Balancing Meditation" },
   { id: 5, src: glry5, alt: "Pranayama Breathing Technique" },
   { id: 6, src: glry6, alt: "Ganga River Aarti Ceremony" },
@@ -46,14 +58,29 @@ const galleryImages = [
   { id: 16, src: glry16, alt: "One-on-One Alignment Check" },
   { id: 17, src: glry17, alt: "Neti Pot Cleansing Demonstration" },
   { id: 18, src: glry18, alt: "Trekking near Rishikesh" },
-  { id: 19, src: glry19, alt: "Shatkarma Techniques Practice" },
+  
   { id: 20, src: glry20, alt: "Yin Yoga Deep Stretching" },
+  { id: 21, src: glry21, alt: "Morning Tea and Reflection" },
+  { id: 22, src: glry22, alt: "Yoga Teacher Guiding Students" },
+  { id: 23, src: glry23, alt: "Tapasya Fire Ceremony" },
+  { id: 24, src: glry24, alt: "Handstand (Adho Mukha Vrksasana) Practice" },
+  { id: 25, src: glry25, alt: "Kirtan Music Night" },
+  { id: 26, src: glry26, alt: "Vinyasa Flow in Open Air" },
+  { id: 27, src: glry27, alt: "Traditional Indian Meal" },
+  { id: 28, src: glry28, alt: "Quiet Reading Spot" },
   { id: 29, src: glry29, alt: "Group Picture at Ganga Ghat" },
   { id: 30, src: glry30, alt: "Headstand (Sirsasana) Instruction" },
   { id: 31, src: glry31, alt: "Peaceful Evening Meditation" },
+  { id: 32, src: glry32, alt: "Students enjoying a Sattvic meal" },
+  { id: 33, src: glry33, alt: "Outdoor meditation session by the trees" },
+  { id: 34, src: glry34, alt: "Detailed hand mudra practice" },
+  { id: 35, src: glry35, alt: "A yoga instructor giving adjustments" },
+  { id: 36, src: glry36, alt: "Group enjoying spiritual discourse" },
+  { id: 37, src: glry37, alt: "A beautiful arrangement of yoga props" },
+  { id: 38, src: glry38, alt: "Sun salutation (Surya Namaskar) sequence" },
 ];
 
-// 🌿 Animation Variants
+// 🎬 Animations
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
@@ -68,27 +95,22 @@ const itemVariants = {
   },
 };
 
-// 🌸 Heading Background
+// 🌸 Heading
+const headingVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
 const headingBackgroundStyle = {
-  backgroundImage: "url('/top_bg2.jpg')",
+  backgroundImage: "url('/for-top2.jpg')",
   backgroundBlendMode: "multiply",
 };
 
-// ✨ Heading Animation
-const headingVariants = {
-  hidden: { opacity: 0, y: -20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8 },
-  },
-};
-
-// 🖼 Main Component
+// ✨ Main Component
 function Gallery() {
   return (
-    <section id="gallery" className="bg-green-100 text-black pt-0 pb-20 min-h-screen">
-      {/* 🌼 Full Width Heading Banner */}
+    <section className="bg-green-100 text-black pt-0 pb-20 min-h-screen">
+      {/* 🌼 Section Header */}
       <motion.div
         className="relative bg-cover bg-center mb-16 py-12 shadow-xl overflow-hidden w-full"
         style={headingBackgroundStyle}
@@ -97,12 +119,11 @@ function Gallery() {
         viewport={{ once: true, amount: 0.5 }}
         variants={headingVariants}
       >
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
-
+        <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="container mx-auto max-w-7xl relative z-10 px-8">
-          <motion.h2 className="text-5xl font-extrabold text-center tracking-wider text-white">
+          <h2 className="text-5xl font-extrabold text-center tracking-wider text-white">
             Our <span className="text-green-300">Gallery</span>
-          </motion.h2>
+          </h2>
         </div>
       </motion.div>
 
@@ -115,22 +136,22 @@ function Gallery() {
           viewport={{ once: true, amount: 0.1 }}
           variants={containerVariants}
         >
-          {galleryImages.map((image) => (
+          {galleryImages.map((img) => (
             <motion.div
-              key={image.id}
+              key={img.id}
               className="relative aspect-square overflow-hidden rounded-xl shadow-2xl group cursor-pointer"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
               <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={img.src}
+                alt={img.alt}
                 loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-opacity-30 group-hover:bg-opacity-10 transition-opacity flex items-end p-3">
+              <div className="absolute inset-0  bg-opacity-30 group-hover:bg-opacity-10 transition-opacity flex items-end p-3">
                 <p className="text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  {image.alt}
+                  {img.alt}
                 </p>
               </div>
             </motion.div>

@@ -1,1 +1,8 @@
 @import "tailwindcss";
+.my-section {
+  background-image: url('/universalbg.png'); /* Ensure the path is correct */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 200px; /* Adjust size as needed */
+  opacity: 0.1; /* Make it very subtle */
+}

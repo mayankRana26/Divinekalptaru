@@ -18,7 +18,7 @@ function ServiceDetail() {
 
   return (
     <motion.section
-      className="bg-white text-gray-800 py-20 px-8 min-h-screen pt-24"
+      className="bg-green-100 text-gray-800 py-20 px-8 min-h-screen pt-24"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

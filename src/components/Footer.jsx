@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     // Outer Footer color set
-    <footer className="bg-green-100 text-black pt-12 border-t-2 border-green-500">
+    <footer className="bg-green-100 text-black pt-12 ">
       <div className="container mx-auto max-w-7xl px-8">
         
         {/* Main Columns Container - Border removed from here */}
@@ -83,7 +83,7 @@ function Footer() {
       {/* Copyright Bar */}
       <div className="bg-lime-500 border-t-2 border-green-600 py-4">
         <div className="container mx-auto max-w-7xl px-8 text-center text-sm text-black">
-          &copy; {year} to {year + 1} Divinekalptaru. All rights reserved.
+          &copy; {year} to {year + 2} Divinekalptaru. All rights reserved.
           <span className="ml-4  sm:inline-block">| Designed & Developed by Mayank Rana.</span>
         </div>
       </div>

@@ -19,7 +19,7 @@ const cardVariants = {
 
 // 🧘‍♂️ Heading Background Style
 const headingBackgroundStyle = {
-  backgroundImage: "url('/top_bg2.jpg')",
+  backgroundImage: "url('/for-top2.jpg')",
   backgroundBlendMode: "multiply",
 };
 
