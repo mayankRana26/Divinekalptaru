@@ -67,7 +67,7 @@ function VideoCarousel() {
         <div className="overflow-hidden">
           <motion.div
             ref={carouselRef}
-            className="flex space-x-8 cursor-grab h-100 w-full active:cursor-grabbing px-4" // Removed padding from outer div
+            className="flex space-x-8 cursor-grab h-80 w-full active:cursor-grabbing px-4" // Removed padding from outer div
             drag="x"
             dragConstraints={{ right: 0, left: -carouselWidth }}
             // Ensure constraints update when carouselWidth updates

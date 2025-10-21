@@ -4,10 +4,10 @@ import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const services = [
-  { id: '1-month-program', title: '1 Month Yoga Training Program' },
-  { id: '3-month-program', title: '3 Month Yoga Training Program' },
-  { id: '6-month-program', title: '6 Month Yoga Training Program' },
-  { id: '12-month-program', title: '12 Month Yoga Training Program' },
+  { id: '1-month-program', title: '1 Month Yoga Training' },
+  { id: '3-month-program', title: '3 Month Yoga Training' },
+  { id: '6-month-program', title: '6 Month Yoga Training' },
+  { id: '12-month-program', title: '12 Month Yoga Training' },
 ];
 
 function Header() {

@@ -196,10 +196,10 @@ function Contact() {
                 <BsCalendarCheckFill className="absolute left-3 top-3 text-green-500" />
                 <select name="courseName" value={formData.courseName} onChange={handleChange} className="w-full pl-10 pr-4 py-2 border-2 border-green-500 rounded-lg focus:ring-green-500 focus:border-green-500 outline-none appearance-none cursor-pointer">
                   <option value="">Select a Course</option>
-                  <option value="1-month-program">1 Month Training Program</option>
-                  <option value="3-month-program">3 Month Training Program</option>
-                  <option value="6-month-program">6 Month Training Program</option>
-                  <option value="12-month-program">12 Month Training Program</option>
+                  <option value="1-month-program">1 Month Training</option>
+                  <option value="3-month-program">3 Month Training</option>
+                  <option value="6-month-program">6 Month Training</option>
+                  <option value="12-month-program">12 Month Training</option>
                   <option value="online-course">Online Course</option>
                   <option value="other">Other Inquiry</option>
                 </select>
