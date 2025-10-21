@@ -74,24 +74,19 @@ function FacilitiesSection() {
             
             {/* Paragraph 1: Introduction and Ambience */}
             <p className="text-lg leading-relaxed text-gray-700">
-              🕉️ **Welcome to Your Sanctuary of Inner Harmony.** You will have access to all the facilities you could possibly need in our peaceful campus in **Bengaluru**. The ambiance is meticulously designed for immersive practice, making it a genuinely inspiring place that fosters deep spiritual well-being. 🌿
+              🕉️ Welcome to Your Sanctuary of Inner Harmony. You will have access to all the facilities you could possibly need in our peaceful campus in Bengaluru. The ambiance is meticulously designed for immersive practice, making it a genuinely inspiring place that fosters deep spiritual well-being. 🌿
             </p>
             
             {/* Paragraph 2: Core Essence and Guidance */}
             <p className="text-lg leading-relaxed text-gray-700">
-              Under the gentle guidance of our experienced **yoga masters**, you’ll explore the true essence of yoga — blending **ancient traditions with modern insights**. Every session is designed to elevate your awareness and bring lasting inner peace.
+              Under the gentle guidance of our experienced yoga masters, you’ll explore the true essence of yoga — blending ancient traditions with modern insights. Every session is designed to elevate your awareness and bring lasting inner peace.
             </p>
 
             {/* Paragraph 3: Beginner to Advanced Focus */}
             <p className="text-lg leading-relaxed text-gray-700">
-              Whether you are a beginner discovering the beauty of yoga or an advanced practitioner refining your mastery, our **personalized approach** nurtures growth at every step. The serene surroundings and holistic routines cultivate an environment of complete **rejuvenation**—mind, body, and soul.
-            </p>
-
-            {/* Paragraph 4: Dining and Wellness */}
-            <p className="text-lg leading-relaxed text-gray-700">
-              Indulge in wholesome **Sattvic meals** (catering to vegan, gluten-free, etc.), and embrace a slower rhythm of life. We provide restorative services like **Kirtan (sound healing)** and **Ayurvedic massage** to support positive energy and holistic well-being during your time here. 🧘‍♀️💫
-            </p>
-
+              Whether you are a beginner discovering the beauty of yoga or an advanced practitioner refining your mastery, oupersonalized approa nurtures growth at every step. The serene surroundings and holistic routines cultivate an environment of complete rejuvenation—mind, body, and soul.
+            
+            🧘‍♀️💫</p>
           </motion.div>
         </div>
       </div>

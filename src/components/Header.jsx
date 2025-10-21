@@ -54,7 +54,7 @@ function Header() {
       {/* Logo */}
       <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
         <div className="flex items-center space-x-3 ml-8">
-          <img src="/logo_divine.png" alt="Divinekalptaru Logo" className="h-12 w-12 l" />
+          <img src="/logo.png" alt="Divinekalptaru Logo" className="h-12 w-12" />
         </div>
       </Link>
 
