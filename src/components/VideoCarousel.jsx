@@ -3,11 +3,11 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const videos = [
-  { id: 1, src: "/video3.mp4", title: "Yoga Anatomy Basics" },
-  { id: 2, src: "/video1.mp4", title: "Morning Vinyasa Flow" },
-  { id: 3, src: "/video2.mp4", title: "Deep Meditation Guide" },
-  { id: 4, src: "/video4.mp4", title: "Restorative Evening Stretch" },
-  { id: 5, src: "/video5.mp4", title: "Full Body Stretch" },
+  { id: 1, src: "/video3.mp4" },
+  { id: 2, src: "/video1.mp4" },
+  { id: 3, src: "/video2.mp4" },
+  { id: 4, src: "/video4.mp4" },
+  { id: 5, src: "/video5.mp4" },
 ];
 
 function VideoCarousel() {
@@ -109,11 +109,6 @@ function VideoCarousel() {
                   >
                     {playingIndex === index ? "⏸️" : "▶️"}
                   </motion.span>
-                </div>
-
-                {/* Title */}
-                <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white text-sm p-2 text-center font-semibold">
-                  {vid.title}
                 </div>
               </motion.div>
             ))}
