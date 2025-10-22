@@ -19,7 +19,7 @@ const itemVariants = {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <section className=" min-h-screen flex items-center justify-center text-white overflow-hidden">
       
       {/* 1. background video */}
       <video
@@ -28,7 +28,7 @@ function Hero() {
         loop
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/bgvideo.mp4" type="video/mp4" />
+        <source src="https://youtube.com/shorts/lB41prr-IeA?si=xUlaq1Ixj3UfB9vA" type="video/mp4" />
         {/* 
         <source src="/your-video.webm" type="video/webm" />
         */}
@@ -57,7 +57,7 @@ function Hero() {
             className="text-lg text-gray-200 mb-8"
             variants={itemVariants}
           >
-            Unlock the flow of Prana (life force) to awaken the divinity within.
+            Unlock the flow of Prana to awaken the divinity within.
           </motion.p>
           <motion.div
             className="flex justify-center md:justify-start space-x-4"
