@@ -92,7 +92,7 @@ function About() {
               className="text-lg leading-relaxed mb-6 text-gray-700 border-l-4 border-green-500 pl-4 italic"
               variants={sectionVariants}
             >
-              The Divine Kalpataru is a modest habitat for yoga, tucked away
+              The Divine kalptaru is a modest habitat for yoga, tucked away
               among a variety of good and divine sites of worship, where
               discipline and steadfastness are sharpened with a touch of culture
               and a wave of tradition.
@@ -147,7 +147,7 @@ function About() {
           >
             <img
               src="/for_about.png"
-              alt="Divinekalpataru Yoga Studio or serene yoga scene"
+              alt="Divinekalptaru Yoga Studio or serene yoga scene"
               className="w-full max-w-lg max-h-[600px] object-contain rounded-xl shadow-2xl border-2 border-green-500 transition-transform duration-500"
             />
           </motion.div>

@@ -50,7 +50,7 @@ const galleryImages = [
   { id: 8, src: glry8, alt: "Advanced Backbend Pose" },
   { id: 9, src: glry9, alt: "Teacher Training Graduation" },
   { id: 10, src: glry10, alt: "Hatha Yoga Flow Sequence" },
-  { id: 11, src: glry11, alt: "Divine Kalpataru Studio Entrance" },
+  { id: 11, src: glry11, alt: "Divine kalptaru Studio Entrance" },
   { id: 12, src: glry12, alt: "Mantra Chanting Circle" },
   { id: 13, src: glry13, alt: "Restorative Yoga with Props" },
   { id: 14, src: glry14, alt: "Anatomy and Physiology Class" },

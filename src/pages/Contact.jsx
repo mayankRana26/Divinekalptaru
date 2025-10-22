@@ -101,7 +101,7 @@ function Contact() {
         
         <div className="container mx-auto max-w-7xl relative z-10 px-8">
           <motion.h2 className="text-5xl font-extrabold text-center tracking-wider text-white">
-            Contact <span className="text-green-300">Divine Kalpataru</span>
+            Contact <span className="text-green-300">Divine kalptaru</span>
           </motion.h2>
         </div>
       </motion.div>

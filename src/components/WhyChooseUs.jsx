@@ -39,7 +39,7 @@ const features = [
     title: "Cultivate Inner Growth",
     icon: FaSeedling,
     description:
-      "Like the Kalpataru (wish-fulfilling tree), we provide the environment for students to root themselves in discipline and achieve true spiritual growth.",
+      "Like the kalptaru (wish-fulfilling tree), we provide the environment for students to root themselves in discipline and achieve true spiritual growth.",
   },
   {
     title: "Rooted in Tradition",
@@ -66,7 +66,7 @@ function WhyChooseUs() {
           variants={sectionVariants}
         >
           Why Choose{" "}
-          <span className="text-green-700">Divine Kalpataru</span>?
+          <span className="text-green-700">Divine kalptaru</span>?
         </motion.h2>
 
         {/* 🌸 Feature Cards Grid */}
