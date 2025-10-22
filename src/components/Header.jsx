@@ -46,7 +46,8 @@ function Header() {
 
   return (
     <motion.header 
-      className="bg-lime-500 text-white py-2 px-4 flex justify-between items-center fixed top-0 left-0 w-full z-50 shadow-xl"
+      className="bg-lime-500 text-white py-2 px-4 flex justify-between items-center  fixed top-0 left-0 w-full z-50 pt-4 pb-4 shadow-xl"
+                             
       variants={navbarVariants}
       initial="hidden"
       animate="visible"

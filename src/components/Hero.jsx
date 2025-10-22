@@ -18,22 +18,25 @@ const itemVariants = {
 };
 
 function Hero() {
+  // YouTube Shorts Video ID: lB41prr-IeA
+  const youtubeEmbedUrl = "https://www.youtube.com/embed/lB41prr-IeA?autoplay=1&mute=1&loop=1&controls=0&playlist=lB41prr-IeA&iv_load_policy=3&disablekb=1&modestbranding=1&rel=0";
+
   return (
-    <section className=" min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <section className=" relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       
-      {/* 1. background video */}
-      <video
-        autoPlay
-        muted
-        loop
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src="https://youtube.com/shorts/lB41prr-IeA?si=xUlaq1Ixj3UfB9vA" type="video/mp4" />
-        {/* 
-        <source src="/your-video.webm" type="video/webm" />
-        */}
-        Your browser does not support the video.
-      </video>
+      {/* 1. background video (YouTube Embed) */}
+      {/* एक div में iframe को रैप किया गया है और इसे cover इफ़ेक्ट देने के लिए बड़ा किया गया है */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+        <iframe
+          src={youtubeEmbedUrl}
+          title="YouTube Video Background"
+          frameBorder="0"
+          allow="autoplay; encrypted-media; loop"
+          allowFullScreen
+          // 'object-cover' प्रभाव देने के लिए, iframe को बहुत बड़ा (300%) और केंद्र में रखा जाता है।
+          className="absolute top-1/2 left-1/2 w-[300%] h-[300%] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        />
+      </div>
 
       {/* 2. overlay for text clarity */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
@@ -69,13 +72,13 @@ function Hero() {
               whileTap={{ scale: 0.95 }}
               className="bg-cyan-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-cyan-400 transition-colors duration-300"
             >
-             Join Now
+              Join Now
             </motion.a>
             <motion.a 
               href="/gallery" 
               whileHover={{ scale: 1.05 }} 
               whileTap={{ scale: 0.95 }}
-              className="bg-lime-500 text-white font-bold py-3 px-6 rounded-lg border-3 border-white  hover:bg-gray-700 transition-colors duration-300"
+              className="bg-lime-500 text-white font-bold py-3 px-6 rounded-lg border-3 border-white  hover:bg-gray-700 transition-colors duration-300"
             >
               View Gallery
             </motion.a>
