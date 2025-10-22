@@ -84,7 +84,7 @@ function Hero() {
 
         <div className="md:w-1/2 flex justify-center md:justify-end md:pl-16 mt-8 md:mt-0">
           <motion.div
-            className="relative w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-green-500 hover:border-green-400 transition-colors duration-300"
+            className="relative w-45 h-45 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-green-500 hover:border-green-400 transition-colors duration-300"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{

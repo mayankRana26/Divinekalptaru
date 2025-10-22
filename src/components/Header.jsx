@@ -53,9 +53,11 @@ function Header() {
     >
       {/* Logo */}
       <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-        <div className="flex items-center space-x-3 ml-8">
-          <img src="/logo-last.png" alt="Divinekalptaru Logo" className="h-12 w-12" />
-        </div>
+      <h1 class="text-2xl font-semibold ml-8 ">
+  <span class="font-black text-green-700 [text-shadow:0.5px_0.5px_0px_#ffffff]">Divine</span>
+  <span class="text-white [text-shadow:0.5px_0.9px_0px_#111111]">Kalptaru</span>
+</h1>
+
       </Link>
 
       {/* Mobile Toggle Button */}
