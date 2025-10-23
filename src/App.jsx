@@ -12,12 +12,14 @@ import ServiceDetail from './pages/ServiceDetail';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
+// import FloatingContactButtons from './components/FloatingContactButtons';
+import FixedContactBar from './components/FixedContactBar';
 
 
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen antialiased">
+    <div className="flex flex-col min-h-screen antialiased ">
       <Header />
       
       {/* main grow kare, taaki footer bottom pe rahe */}
@@ -33,8 +35,8 @@ function App() {
         </Routes>
       </main>
       <ScrollToTop />
-     
       <Footer />
+      <FixedContactBar />
     </div>
   );
 }

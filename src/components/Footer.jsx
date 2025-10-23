@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     // Outer Footer color set
-    <footer className="bg-green-100 text-black pt-12 ">
+    <footer className="bg-green-100 text-black pt-12 mb-15 ">
       <div className="container mx-auto max-w-7xl px-8">
         
         {/* Main Columns Container - Border removed from here */}

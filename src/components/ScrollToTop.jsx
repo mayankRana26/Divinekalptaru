@@ -39,7 +39,7 @@ function ScrollToTop() {
         <motion.div
           onClick={scrollToTop}
           // Button Styling: Fixed position, bottom right, green theme
-          className="fixed bottom-10 right-6 cursor-pointer z-50 p-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition-colors"
+          className="fixed bottom-25 right-6 cursor-pointer z-50 p-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition-colors"
           
           // Framer Motion Animation: Fade in and scale up smoothly
           initial={{ opacity: 0, scale: 0.5 }}

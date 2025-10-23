@@ -38,6 +38,10 @@ import glry35 from "../assets/gallery/glry35.jpg";
 import glry36 from "../assets/gallery/glry36.jpg";
 import glry37 from "../assets/gallery/glry37.jpg";
 import glry38 from "../assets/gallery/glry38.jpg";
+import glry39 from "../assets/gallery/glry39.jpg";
+import glry40 from "../assets/gallery/glry40.jpg";
+import glry41 from "../assets/gallery/glry41.jpg";
+import glry42 from "../assets/gallery/glry42.jpg";
 
 // 🖼 All Gallery Images
 const galleryImages = [
@@ -78,6 +82,10 @@ const galleryImages = [
   { id: 36, src: glry36, alt: "Group enjoying spiritual discourse" },
   { id: 37, src: glry37, alt: "A beautiful arrangement of yoga props" },
   { id: 38, src: glry38, alt: "Sun salutation (Surya Namaskar) sequence" },
+  { id: 39, src: glry39, alt: "Yoga Nidra session in progress" },
+  { id: 40, src: glry40, alt: "Students practicing partner yoga" },
+  { id: 41, src: glry41, alt: "Aerial yoga hammock setup" },
+  { id: 42, src: glry42, alt: "Yoga anatomy workshop with skeleton model" },
 ];
 
 // 🎬 Animations
@@ -149,11 +157,7 @@ function Gallery() {
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0  bg-opacity-30 group-hover:bg-opacity-10 transition-opacity flex items-end p-3">
-                <p className="text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  {img.alt}
-                </p>
-              </div>
+            
             </motion.div>
           ))}
         </motion.div>
