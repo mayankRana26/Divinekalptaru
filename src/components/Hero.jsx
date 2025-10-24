@@ -22,14 +22,14 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center text-white object-cover overflow-hidden">
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full object-cover overflow-hidden z-0">
+      <div className="absolute top-0 left-0 w-full h-full object-fit overflow-hidden z-0">
         <iframe
           src={youtubeEmbedUrl}
           title="Divinekalptaru Yoga Background Video"
           frameBorder="0"
-          allow="autoplay; encrypted-media; loop"
+          allow="autoplay; encrypted-media;"
           allowFullScreen
-          className="absolute top-1/2 left-1/2 w-[300%] h-[300%] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+          className="absolute top-1/2 left-1/2 w-[400%] h-[400%] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
         />
       </div>
 

@@ -29,7 +29,7 @@ function FixedContactBar() {
         <motion.div
             // 🟢 NEW POSITIONING: Fixed at left edge, centered vertically
             // top-1/2 and -translate-y-1/2 centers it
-            className="fixed top-1/2 left-0 top-100 transform -translate-y-1/2 z-50 flex flex-col space-y-4 p-3 md:p-0"
+            className="fixed top-1/2 left-0 top-130 transform -translate-y-1/2 z-50 flex flex-col space-y-4 p-3 md:p-0"
             initial="hidden"
             animate="visible"
             variants={variants}
