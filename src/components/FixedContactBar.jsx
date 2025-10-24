@@ -29,7 +29,7 @@ function FixedContactBar() {
         <motion.div
             // 🟢 NEW POSITIONING: Fixed at left edge, centered vertically
             // top-1/2 and -translate-y-1/2 centers it
-            className="fixed top-1/2 left-0 top-120 transform -translate-y-1/2 z-50 flex flex-col space-y-4 p-3 md:p-0"
+            className="fixed top-1/2 left-0 top-100 transform -translate-y-1/2 z-50 flex flex-col space-y-4 p-3 md:p-0"
             initial="hidden"
             animate="visible"
             variants={variants}
@@ -44,7 +44,7 @@ function FixedContactBar() {
                     href={`https://wa.me/${WHATSAPP_NUMBER}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-green-600 rounded-lg shadow-xl hover:bg-green-700 transition-colors -mt-10"
+                    className="p-3 bg-green-600 rounded-lg shadow-xl hover:bg-green-700 transition-colors -mt-20"
                     whileHover={{ scale: 1.05 }}
                     aria-label="Chat on WhatsApp"
                     variants={variants}
