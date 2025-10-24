@@ -34,8 +34,8 @@ function App() {
           <Route path="/services/:id" element={<ServiceDetail />} />
         </Routes>
       </main>
-      <ScrollToTop />
       <Footer />
+      <ScrollToTop />
       <FixedContactBar />
     </div>
   );
