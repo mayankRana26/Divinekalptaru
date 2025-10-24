@@ -64,10 +64,8 @@ function CustomReviewSlider() {
             />
         ));
     };
-
-    const GOOGLE_REVIEW_LINK = "https://www.google.com/search?sca_esv=a103ba62d6fbfa94&hl=en-IN&gl=in&sxsrf=AE3TifPR3H4J0UaNtmIQPqblTTeYmB2MuQ:1761275643776&q=Divine+kalptaru+yoga,+26+2nd+cross+Akshaya+garden+Akshay+Nagar,+post,+Begur,+Bengaluru,+Karnataka+560114&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E4-mYbgc9EyEHt6amjUFFvq4xmU6_lS4pxERuoXY_cXaJzBe16mUSweW6rhnlwVbrsq8xonowGY3wj8eQJybALSFedbh_CB5M-ga-AWfWvEzt4qTyA%3D%3D&sa=X&ved=2ahUKEwiggOWI77uQAxX4SWwGHR1LA1kQrrQLegQIIRAA&biw=1536&bih=730&dpr=1.25";
-
-
+const GOOGLE_REVIEW_LINK = "https://www.google.com/search?sca_esv=25498c63d407204d&hl=en-IN&gl=in&sxsrf=AE3TifM7ttiKCTy6kWwEvCyKpEJhHdxVsQ:1761279347518&q=Divine+kalptaru+Yoga+centre,+opp.+Combined+hospital,+Srinagar,+Uttarakhand+246174&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_Fr1RMe-MQALtUtvt5V-ZZQ1yCB16k5UtzmWIzlyS2LDS62cQrhIRpC5PoyLChIekzDbr5eQVJPTqTHdZJ5o1Ne5hh9y6UAUOaBtqI_1d-qms8ahg%3D%3D&sa=X&ved=2ahUKEwiYwO_u_LuQAxUkXmwGHeCCNvoQrrQLegQIGxAA&biw=1536&bih=730&dpr=1.25";
+ 
     return (
         <motion.section 
             className="py-20 bg-green-100 relative overflow-hidden" 
