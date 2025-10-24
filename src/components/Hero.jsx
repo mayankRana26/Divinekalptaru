@@ -20,9 +20,9 @@ function Hero() {
     "https://www.youtube.com/embed/9K8Sxzvs8AU?autoplay=1&mute=1&loop=1&controls=0&playlist=9K8Sxzvs8AU&iv_load_policy=3&disablekb=1&modestbranding=1&rel=0";
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center text-white object-cover overflow-hidden">
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+      <div className="absolute top-0 left-0 w-full h-full object-cover overflow-hidden z-0">
         <iframe
           src={youtubeEmbedUrl}
           title="Divinekalptaru Yoga Background Video"

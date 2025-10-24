@@ -44,7 +44,7 @@ function FixedContactBar() {
                     href={`https://wa.me/${WHATSAPP_NUMBER}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-green-600 rounded-lg shadow-xl hover:bg-green-700 transition-colors -mt-20"
+                    className="p-3 bg-green-600 rounded-lg shadow-xl hover:bg-green-700 transition-colors -mt-10"
                     whileHover={{ scale: 1.05 }}
                     aria-label="Chat on WhatsApp"
                     variants={variants}
