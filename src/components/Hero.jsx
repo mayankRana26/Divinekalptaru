@@ -22,7 +22,7 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <iframe
           src={youtubeEmbedUrl}
           title="Divinekalptaru Yoga Background Video"

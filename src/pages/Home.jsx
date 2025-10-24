@@ -6,6 +6,7 @@ import FacilitiesSection from '../components/FacilitiesSection';
 import PricingPlanSection from '../components/PricingPlanSection';
 import HelpPopup from '../components/HelpPopup';
 import InstructorSection from '../components/InstructorSection';
+import CustomReviewSlider from '../components/CustomReviewSlider';
 // import GoogleReviews from '../components/GoogleReviews';
 
 
@@ -19,6 +20,7 @@ function Home() {
       <InstructorSection />
       <FacilitiesSection />
        <HelpPopup />
+       <CustomReviewSlider />
       {/* <GoogleReviews /> */}
       
     </>
