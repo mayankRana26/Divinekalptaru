@@ -14,6 +14,7 @@ import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
 // import FloatingContactButtons from './components/FloatingContactButtons';
 import FixedContactBar from './components/FixedContactBar';
+import Online from './pages/online';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/online" element={<Online />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
@@ -43,3 +45,5 @@ function App() {
 
 
 export default App;
+
+
