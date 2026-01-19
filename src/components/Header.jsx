@@ -108,17 +108,84 @@ function Header() {
       </nav>
 
       {/* MOBILE MENU */}
-      {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white py-6 shadow-xl md:hidden">
-          <div className="flex flex-col items-center gap-4 text-lg">
-            <Link to="/" onClick={handleLinkClick}>Home</Link>
-            <Link to="/about" onClick={handleLinkClick}>About</Link>
-            <Link to="/online" onClick={handleLinkClick}>Online</Link>
-            <Link to="/gallery" onClick={handleLinkClick}>Gallery</Link>
-            <Link to="/contact" onClick={handleLinkClick}>Contact</Link>
+{isMobileMenuOpen && (
+  <div className="absolute top-full left-0 w-full bg-white py-6 shadow-xl md:hidden">
+    <div className="flex flex-col items-center gap-2 text-lg font-semibold text-gray-800">
+
+      {/* Home */}
+      <Link
+        to="/"
+        onClick={handleLinkClick}
+        className="w-full text-center py-2 hover:bg-lime-500 hover:text-white transition"
+      >
+        Home
+      </Link>
+
+      {/* About */}
+      <Link
+        to="/about"
+        onClick={handleLinkClick}
+        className="w-full text-center py-2 hover:bg-lime-500 hover:text-white transition"
+      >
+        About
+      </Link>
+
+      {/* Services Dropdown */}
+      <div className="w-full text-center">
+        <button
+          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          className="w-full flex justify-center items-center gap-2 py-2 hover:bg-lime-500 hover:text-white transition"
+        >
+          Services <FaChevronDown className={`text-sm transition ${isDropdownOpen ? "rotate-180" : ""}`} />
+        </button>
+
+        {isDropdownOpen && (
+          <div className="bg-gray-100">
+            {services.map((s) => (
+              <Link
+                key={s.id}
+                to={`/services/${s.id}`}
+                onClick={handleLinkClick}
+                className="block py-2 text-sm hover:bg-green-500 hover:text-white transition"
+              >
+                {s.title}
+              </Link>
+            ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
+
+      {/* Online */}
+      <Link
+        to="/online"
+        onClick={handleLinkClick}
+        className="w-full text-center py-2 hover:bg-lime-500 hover:text-white transition"
+      >
+        Online
+      </Link>
+
+      {/* Gallery */}
+      <Link
+        to="/gallery"
+        onClick={handleLinkClick}
+        className="w-full text-center py-2 hover:bg-lime-500 hover:text-white transition"
+      >
+        Gallery
+      </Link>
+
+      {/* Contact */}
+      <Link
+        to="/contact"
+        onClick={handleLinkClick}
+        className="w-full text-center py-2 hover:bg-lime-500 hover:text-white transition"
+      >
+        Contact
+      </Link>
+
+    </div>
+  </div>
+)}
+
     </motion.header>
   );
 }
