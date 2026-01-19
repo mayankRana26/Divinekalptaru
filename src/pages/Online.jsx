@@ -22,14 +22,13 @@ const Online = () => {
           <Sparkles className="absolute top-10 left-10 text-emerald-300 opacity-30 w-12 h-12" />
           
           <h1 className="text-4xl font-black mb-2 leading-tight uppercase tracking-tight">
-            Heal Your <br/>Body. 
+            Heal Your <br/>Body.
           </h1>
           <div className="h-1 w-16 bg-yellow-400 mx-auto mb-3 rounded-full"></div>
           <p className="text-emerald-50 text-sm font-medium opacity-90 italic">
             Therapeutic Yoga for Pain Management
           </p>
         </div>
-
         {/* Specialized Areas */}
         <div className="p-8 bg-white">
           <h2 className="text-center font-black text-gray-900 mb-6 text-xl uppercase tracking-wider">
