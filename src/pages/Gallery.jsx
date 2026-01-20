@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // ✅ Import Gallery Images
-import glry1 from "../assets/gallery/glry1.jpg";
+
 import glry4 from "../assets/gallery/glry4.jpg";
 import glry5 from "../assets/gallery/glry5.jpg";
 import glry6 from "../assets/gallery/glry6.jpg";
@@ -30,7 +30,6 @@ import glry27 from "../assets/gallery/glry27.jpg";
 import glry28 from "../assets/gallery/glry28.jpg";
 import glry29 from "../assets/gallery/glry29.jpg";
 import glry30 from "../assets/gallery/glry30.jpg";
-import glry31 from "../assets/gallery/glry31.jpg";
 import glry32 from "../assets/gallery/glry32.jpg";
 import glry33 from "../assets/gallery/glry33.jpg";
 import glry34 from "../assets/gallery/glry34.jpg";
@@ -45,7 +44,6 @@ import glry42 from "../assets/gallery/glry42.jpg";
 
 // 🖼 All Gallery Images
 const galleryImages = [
-  { id: 1, src: glry1, alt: "Sunrise Meditation in Himalayas" },
   
   { id: 4, src: glry4, alt: "Chakra Balancing Meditation" },
   { id: 5, src: glry5, alt: "Pranayama Breathing Technique" },
@@ -74,7 +72,6 @@ const galleryImages = [
   { id: 28, src: glry28, alt: "Quiet Reading Spot" },
   { id: 29, src: glry29, alt: "Group Picture at Ganga Ghat" },
   { id: 30, src: glry30, alt: "Headstand (Sirsasana) Instruction" },
-  { id: 31, src: glry31, alt: "Peaceful Evening Meditation" },
   { id: 32, src: glry32, alt: "Students enjoying a Sattvic meal" },
   { id: 33, src: glry33, alt: "Outdoor meditation session by the trees" },
   { id: 34, src: glry34, alt: "Detailed hand mudra practice" },
