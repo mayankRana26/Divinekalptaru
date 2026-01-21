@@ -32,7 +32,7 @@ const HelpPopup = () => {
             {isVisible && (
                 <motion.div
                     // Styling: Green theme, moved slightly left to avoid OpenWidget/Chat icon
-                    className="fixed bottom-6 right-6 md:right-24 z-50 p-5 w-72 bg-white border border-green-400 text-gray-800 rounded-xl shadow-2xl"
+                    className="fixed bottom-6 right-6 md:right-24 z-50 p-5 md:w-72 w-50 bg-white border border-green-400 text-gray-800 rounded-xl shadow-2xl"
                     initial={{ opacity: 0, y: 50, scale: 0.9 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -40,7 +40,7 @@ const HelpPopup = () => {
                     role="alert"
                 >
                     <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-xl font-bold text-green-700 flex items-center">
+                        <h3 className="md:text-xl sm:text-lg font-bold text-green-700 flex items-center">
                              How can we help you?
                         </h3>
                         <button 
@@ -52,7 +52,7 @@ const HelpPopup = () => {
                         </button>
                     </div>
                     
-                    <p className="text-sm mb-4 text-gray-600">
+                    <p className="md:text-sm text-xs mb-4 text-gray-600">
                         Do you have questions about our Yoga Programs, retreat dates, or facility highlights?
                     </p>
                     

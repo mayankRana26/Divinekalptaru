@@ -15,6 +15,7 @@ import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
 // import FloatingContactButtons from './components/FloatingContactButtons';
 import FixedContactBar from './components/FixedContactBar';
 import Online from './pages/Online';
+// import JoinOnlineButton from './components/JoinOnlineButton';
 
 
 
@@ -38,6 +39,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      
       <FixedContactBar />
     </div>
   );

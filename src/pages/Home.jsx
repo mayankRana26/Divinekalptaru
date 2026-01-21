@@ -7,6 +7,7 @@ import PricingPlanSection from '../components/PricingPlanSection';
 import HelpPopup from '../components/HelpPopup';
 import InstructorSection from '../components/InstructorSection';
 import CustomReviewSlider from '../components/CustomReviewSlider';
+import JoinOnlineButton from '../components/JoinOnlineButton';
 // import GoogleReviews from '../components/GoogleReviews';
 
 
@@ -14,6 +15,7 @@ function Home() {
   return (
     <>
       <Hero />
+      <JoinOnlineButton />
       <WhyChooseUs />
       <VideoCarousel />
       <PricingPlanSection />
@@ -21,7 +23,7 @@ function Home() {
       <FacilitiesSection />
        <HelpPopup />
        <CustomReviewSlider />
-      {/* <GoogleReviews /> */}
+
       
     </>
   );
